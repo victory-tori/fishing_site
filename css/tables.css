@@ -1,0 +1,39 @@
+.show_table {                                 
+    background: #5e7562;                
+    text-align: center;                 
+    width: 90%;                         
+    border-radius: 5px;                 
+    border-collapse: collapse;          
+    box-shadow: 5px 5px 5px #29211f;    
+    margin: 1% auto;                    
+}
+
+.show_table thead, .show_table tfoot {                          
+    background: #3A352F;                
+    color: #ffffff;                     
+    font-size: 120%;                    
+    padding: 5pt;                       
+}
+
+.show_table td,  .show_table th {                                
+    border: 1pt solid black;            
+    width: 15%;                         
+    font-size: 14pt;                    
+}
+
+.show_table tbody tr:nth-child(odd) {               
+    background: #4b5b4c;                
+}
+
+.form_table {                                 
+    margin: 0 auto;                     
+    font-size: 14pt;                    
+}
+
+.form_table td {                              
+    vertical-align: top;                
+}
+
+.form_table tfoot {
+    text-align: center;
+}

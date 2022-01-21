@@ -1,0 +1,95 @@
+input, select {
+    background-color: #d1ffcc;
+    font-size: 90%;
+    border-radius: 5px;
+    border: 1px #756756 solid;
+}
+
+.account_menu {
+    display: flex;
+    flex-direction: column;
+}
+
+.account_menu h5 {
+    margin: 0;
+    padding: 1% 3%;
+}
+
+.account_menu a {
+    background-color: #7abc90;
+    color: black;
+    border: 1px #756756 solid;
+    width: 50%;
+}
+
+.account_menu a:hover {
+    background-color: #cee381;
+    color: #006633;
+}
+.account_menu a:focus {
+    background-color: #aaaaaa;
+    color: #bbbbbb;
+}
+
+
+
+input[type=text],
+input[type=email], input[type=number],
+input[type=date], select {
+    box-sizing: border-box;
+    width: 100%;
+}
+
+input:hover, select:hover {
+    box-shadow: 0 0 10px #5A4A3B;
+}
+
+input:focus, select:focus {
+    outline: none;
+    border-color: #b5bf26;
+    box-shadow: 0 0 10px #b5bf26;
+}
+
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {      /* kod ze strony https://www.w3schools.com/howto/howto_css_hide_arrow_number.asp */
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+select {
+    padding: 5px 6px;
+}
+
+/* ---------------------------------------------------- BUTTONS ----------------------------------------------------- */
+input[type=submit], input[type=reset], .go_back {
+    background-color: #3f5640;
+    border: none;
+    color: white;
+    padding: 1.5% 6%;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 4px 0;
+}
+
+/* ------------------------------------------------------ OTHER ----------------------------------------------------- */
+fieldset {
+    background-color: #81b77e;
+}
+
+legend {
+    background-color: #3a4a32;
+    color: white;
+    padding: 5px 10px;
+}
+
+.acc_form_name {
+    text-align: center;
+    margin: 2% auto;
+}
+
+.form_error {
+    font-size: 14pt;
+    color: #990000;
+}

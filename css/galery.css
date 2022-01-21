@@ -1,0 +1,16 @@
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 80%;
+    margin: 0 auto;
+}
+img.gal_img { 
+    margin: 1% 0; 
+    border-radius: 10%;
+    width: 154px;
+}
+.galery_name {
+    margin: 2% auto;
+    text-align: center;
+}

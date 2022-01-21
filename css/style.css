@@ -1,0 +1,260 @@
+/* -------------------------------------------------- MAIN ELEMENTS ------------------------------------------------- */
+body {                              
+    background: #161615;
+    line-height: 1.5;
+    margin: 0;
+}
+
+header, footer, main,
+.banner, .description {             
+    margin: 0 5%;
+    width: 90%;
+}
+
+header, footer {                    
+    color: white;
+    background: #263323;
+    text-align: center;
+}
+
+footer {                            
+    padding: 5px 0;
+    border-radius: 0 0 15px 15px;
+}
+
+/* ------------------------------------------------------ FONTS ----------------------------------------------------- */
+body {                              
+    font-family: "Garamond", serif  
+}
+
+h1 {                                
+    font-size: 2.5rem;
+    line-height: 1.2;
+}
+
+h2 {                                
+    font-size: 2rem;
+    line-height: 1;
+    text-align: center;
+}
+
+h3 {                                
+    font-size: 1.25rem;
+    line-height: 1.2;
+}
+
+h1, h2, h3 {                        
+    margin: 0;
+    font-weight: normal;
+}
+
+p, fieldset, ul, .description {     
+    font-size: 16pt;
+}
+
+/* ----------------------------------------------------- CONTENT ---------------------------------------------------- */
+/* kod ze strony https://codepen.io/eltonkamami/pen/hjBrE;
+przekonwertowany za pomocą strony https://jsonformatter.org/scss-to-css */
+
+.banner {
+    box-sizing: border-box;
+    height: 200px;
+    overflow: hidden;
+    border: 10px solid;
+    border-color: #335624 #26411b;
+    position: relative;
+}
+
+.banner_photo {
+    text-align: left;
+    position: absolute;
+    animation: round 16s infinite;
+    opacity: 0;
+    height: 200px;
+    width: 100%;
+}
+
+@keyframes round {
+    25% {
+        opacity: 1;
+    }
+    40% {
+        opacity: 0;
+    }
+}
+
+.banner_photo:nth-child(1) {
+    animation-delay: 12s;
+}
+
+.banner_photo:nth-child(2) {
+    animation-delay: 8s;
+}
+
+.banner_photo:nth-child(3) {
+    animation-delay: 4s;
+}
+
+.banner_photo:nth-child(4) {
+    animation-delay: 0s;
+}
+
+/* Koniec kodu ze strony https://codepen.io/eltonkamami/pen/hjBrE;
+przekonwertowanego za pomocą strony https://jsonformatter.org/scss-to-css */
+
+main {                              
+    background: #547f67;
+    display: table;
+}
+
+article {                           
+    box-sizing: border-box;
+    width: 80%;
+    float: left;
+    padding: 1%;
+    background: #558c59;
+    border-radius: 0 15px 0 0;
+}
+
+aside {                             
+    width: 20%;
+    float: right;
+}
+
+.menu {
+    background: #547f67;
+    display: flex;
+    flex-direction: row;
+    padding: 16px 0 0;
+}
+
+a {
+    text-decoration: none;
+    user-select: none;
+}
+
+.menu a {                           
+    display: flex;
+    background: #69906c;
+    color: black;
+    margin-right: 3px;
+    padding: 4pt;
+
+}
+
+.menu a:hover {                     
+    background: #f0f0f0;
+    text-align: center;
+}
+
+
+.dropdown_menu ul{                        
+    display: none;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+
+}
+.menu .dropdown_menu:hover ul {           
+    display: block;
+    position: absolute;
+    background: #aaa;
+}
+
+.menu .dropdown_menu li:hover {           
+    background: white;
+}
+
+.box {                              
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding: 5% 5% 10%;
+    margin: 0 0 5% 5%;
+    font-size: 90%;
+    border-radius: 15px 0 0 15px;
+    background: #4a6954;
+}
+
+.box h3 {                           
+    padding: 5%;
+}
+
+.box a {                            
+    padding: 3% 5%;
+    border-radius: 10px;
+    margin: 2% 0;
+    background-color: #819a82;
+    color: black;
+    text-decoration: none;
+}
+
+.box a:hover {                      
+    background-color: #a6bba7;
+    color: #dedec3;
+}
+
+.description {
+    padding: 2% 0;
+}
+
+/* ----------------------------------------------------- MEDIA ---------------------------------------------------- */
+@media screen and (max-width: 720px) {       
+    .banner, header, main, footer, .menu, article {
+        margin: 0;
+        width: 100%;
+        border-radius: 0;
+    }
+
+    .menu {                         
+        padding: 5% 0 0;
+    }
+
+    .menu a, .dropdown_menu {             
+        margin: 0;
+    }
+
+    aside {                         
+        width: 100%;
+        display: inline-flex;
+    }
+
+    .box {                          
+        width: 46%;
+        border-radius: 15px;
+        margin: 2%;
+        font-size: 110%;
+    }
+
+    p {                             
+        width: 100%;
+    }
+}
+
+
+@media only screen and (max-width: 479px) {  
+    * {font-size: 80%}              
+
+    article {
+        width: 100%;
+        border-radius: 0;
+    }
+
+    aside {                         
+        display: flex;
+        flex-direction: column;
+    }
+
+    .box {                          
+        box-sizing: border-box;
+        width: 96%;
+    }
+
+    .paragraph {                    
+        font-size: 80%;
+    }
+
+    .headers_of_p, #credits {       
+        font-size: 14pt;
+    }
+}
